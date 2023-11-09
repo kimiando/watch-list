@@ -1,14 +1,58 @@
 // Specific CSS for your home-page
 body{
   background-color: whitesmoke;
+
 }
 a {
 text-decoration: none;
 }
 
-.card-category{
-  height: 500px;
-  width: 500px;
+.banner{
+  // height: 500px;
   background-repeat: no-repeat;
-  flex-grow: inherit;
+  background-size: cover;
+  background-size:100%;
+  height: 500px;
+}
+.list-group{
+  text-align: center;
+}
+.card{
+  display: block;
+  position: relative;
+}
+
+.card {
+    background-color: white;
+    /* width: 500px; */
+    margin: 24px;
+}
+// .card-body{
+// position: absolute;
+// margin-top: 5px;
+// }
+
+.navbar{
+  margin: 5px 5px;
+}
+.btn {
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+}
+.btn:hover {
+  background-color: #3e8e41;
+  color: white;
+}
+
+.simple-form{
+  text-align: center;
+  // border: 1px solid;
+  // position: absolute;
+  // padding: 10px;
 }

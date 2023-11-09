@@ -1,4 +1,10 @@
-<h2>Create a new bookmark!</h2>
+<div class="nav-container">
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#"> Create a new comment </a>
+    <%= link_to "back to Lists", lists_path, class: 'btn btn-primary' %>
+  </nav>
+</div>
+
 <%= simple_form_for [@list, @bookmark] do |f| %>
         <%= f.input :comment %>
         <%= f.association :movie %>

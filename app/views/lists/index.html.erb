@@ -1,15 +1,22 @@
-<%# <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
- <h1>Movies</h1> %>
-</div>
 <%# <%= @lists.inspect %>
 <%# <%= @lists.all %>
-<h1>Movies</h1>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://img.freepik.com/free-photo/cinema-elements_23-2148133579.jpg?w=2000&t=st=1699558127~exp=1699558727~hmac=c46012f6de343f5d06e1c2e986583e2bf07029ff30b479856631624450f34cf1);">
+  <div class="container">
+    <h1>WatchList App</h1>
+    <p>Change your life and learn to code at one of our campuses around the world.</p>
+    <%= link_to "Add a new list✍🏻", new_list_path, class: 'btn btn-primary' %>
+  </div>
+</div>
+<%# <h3><i class="fa-solid fa-film" style="color: #3a8377;"></i> List of Movies <i class="fa-solid fa-film" style="color: #3a8377;"></i></h3>
 <% @lists.each do |list| %>
-<p> <%= link_to list.name, "lists/#{list.id}" %> </p>
-<% end %>
-
-<%= link_to "Add a new list✍🏻", new_list_path, class: 'btn btn-primary' %>
-<%#
-<%= link_to "🗑️",
-    list_path(list),
-    data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
+<%# <p> <%= link_to list.name, "lists/#{list.id}" %> </p>
+<%# <% end %>
+<div class="form">
+  <ul class="list-group">
+    <li class="list-group-item">
+      <% @lists.each do |list| %>
+      <p> <%= link_to list.name, "lists/#{list.id}" %> </p>
+    <% end %>
+    </li>
+  </ul>
+</div>
