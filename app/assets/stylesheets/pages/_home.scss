@@ -1,1 +1,14 @@
 // Specific CSS for your home-page
+body{
+  background-color: whitesmoke;
+}
+a {
+text-decoration: none;
+}
+
+.card-category{
+  height: 500px;
+  width: 500px;
+  background-repeat: no-repeat;
+  flex-grow: inherit;
+}
