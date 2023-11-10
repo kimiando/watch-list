@@ -17,6 +17,12 @@ text-decoration: none;
 .list-group{
   text-align: center;
 }
+
+.cards{
+display: flex;
+flex-wrap: wrap;
+}
+
 .card{
   display: block;
   position: relative;
@@ -31,7 +37,6 @@ text-decoration: none;
 // position: absolute;
 // margin-top: 5px;
 // }
-
 .navbar{
   margin: 5px 5px;
 }
