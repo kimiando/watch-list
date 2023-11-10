@@ -18,13 +18,14 @@ class ListsController < ApplicationController
     else
       render :new, status: :unprocessable_entity
     end
+
   end
 
   private
 
   def list_params
     params.require(:list).permit(
-      :name
+      :name, :photo
     )
   end
 end
