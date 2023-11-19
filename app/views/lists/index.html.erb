@@ -1,33 +1,27 @@
 <%# <%= @lists.inspect %>
 <%# <%= @lists.all %>
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://img.freepik.com/free-photo/cinema-elements_23-2148133579.jpg?w=2000&t=st=1699558127~exp=1699558727~hmac=c46012f6de343f5d06e1c2e986583e2bf07029ff30b479856631624450f34cf1);">
+<div class="banner">
   <div class="container">
     <h1>WatchList App</h1>
-    <p>Change your life and learn to code at one of our campuses around the world.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, quo aperiam mollitia nulla cumque ut cum laudantium consequatur sint similique fugit perspiciatis debitis? Soluta, a pariatur repellendus rerum optio labore.</p>
     <%= link_to "Add a new list✍🏻", new_list_path, class: 'btn btn-primary' %>
   </div>
 </div>
-<%# <h3><i class="fa-solid fa-film" style="color: #3a8377;"></i> List of Movies <i class="fa-solid fa-film" style="color: #3a8377;"></i></h3>
-<% @lists.each do |list| %>
-<%# <p> <%= link_to list.name, "lists/#{list.id}" %> </p>
-<%# <% end %>
 <div class="form">
   <ul class="list-group">
     <li class="list-group-item">
       <% @lists.each do |list| %>
-      <p> <%= link_to list.name, "lists/#{list.id}" %> </p>
-    <% end %>
+        <p> <%= link_to list.name, "lists/#{list.id}" %> </p>
+      <% end %>
     </li>
   </ul>
 </div>
-
-
 <div class="cards">
-    <% @lists.each do |list| %>
+  <% @lists.each do |list| %>
     <div class="card" style="width: 30rem;">
-    <div class="card-body ">
-    <p> <%= link_to list.name, "lists/#{list.id}" %> </p>
-    </div>
+      <div class="card-body ">
+        <p> <%= link_to list.name, "lists/#{list.id}" %> </p>
+      </div>
     </div>
   <% end %>
 </div>

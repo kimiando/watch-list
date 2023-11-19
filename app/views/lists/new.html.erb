@@ -4,7 +4,6 @@
     <%= link_to "back to Lists", lists_path, class: 'btn btn-primary' %>
   </nav>
 </div>
-
 <div class="simple-form">
   <%= simple_form_for @list do |f| %>
     <%= f.input :name %>
@@ -12,9 +11,7 @@
     <%= f.submit class: 'btn btn-primary' %>
   <% end %>
 </div>
-
-
-<form>
+<%# <form>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Email address</label>
     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -29,4 +26,4 @@
     <label class="form-check-label" for="exampleCheck1">Check me out</label>
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
-</form>
+</form> %>
