@@ -1,78 +1,83 @@
-// Specific CSS for your home-page
-body{
-  background-color: #CD4FD7;
-  color: #ddd;
-
-}
-a {
-text-decoration: none;
-}
-
-.banner{
-  // height: 500px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-size:100%;
-  height: 500px;
-  background-image: asset-url(movies);
-}
-.list-group{
-  text-align: center;
-}
-
-.cards{
-display: flex;
-flex-wrap: wrap;
-}
-
-.card{
-  display: block;
-  position: relative;
-}
-
-.card {
-    background-color: white;
-    /* width: 500px; */
-    margin: 24px;
-}
-// .card-body{
-// position: absolute;
-// margin-top: 5px;
-// }
-.navbar{
-  margin: 5px 5px;
-}
-.btn {
-  background-color: #ddd;
-  border: none;
-  color: black;
-  padding: 16px 32px;
-  text-align: center;
-  font-size: 16px;
-  margin: 4px 2px;
-  transition: 0.3s;
-}
-.btn:hover {
-  background-color: #3e8e41;
-  color: white;
-}
-
-.simple-form{
-  text-align: center;
-  display: flex;
-  justify-content:center;
-  margin-top: 50px;
-  border: 3px solid;
-  background-color: #141414;
-}
-
+// banner code start
 .banner {
-  .container {
-    border: 3px solid;
-    width: fit-content;
-    background-color: #141414;
-    opacity: 3px;
-    display:grid;
-    justify-content: center;
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+}
+
+.banner h1 {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.banner p {
+  font-size: 20px;
+  color: white;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.title-container{
+  justify-content: center;
+  display: grid;
+  h1{
+    padding-bottom: 20px;
   }
 }
+// button
+/* CSS */
+.add-list-button {
+  background: #FF4742;
+  border: 1px solid #FF4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-decoration: none;
+}
+
+.add-list-button:hover,
+.add-list-button:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #FF4742;
+}
+
+.add-list-button:active {
+  opacity: .5;
+}
+
+// .card-container{
+//   display: grid;
+//   align-content: center;
+//   justify-content: center;
+// }
+// // cards
+// .card {
+//   justify-items: center;
+//   text-decoration: none;
+//   background-size: cover;
+// }
+// .card-name{
+//   a{
+//     padding-bottom: 40px;
+//     text-decoration: none;
+//     display: flex;
+//     justify-content: center;
+//     color: #FF4742;
+//   }
+// }
