@@ -61,23 +61,57 @@
   opacity: .5;
 }
 
-// .card-container{
-//   display: grid;
-//   align-content: center;
-//   justify-content: center;
-// }
-// // cards
-// .card {
-//   justify-items: center;
-//   text-decoration: none;
-//   background-size: cover;
-// }
-// .card-name{
-//   a{
-//     padding-bottom: 40px;
-//     text-decoration: none;
-//     display: flex;
-//     justify-content: center;
-//     color: #FF4742;
-//   }
-// }
+.card-category{
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+
+}
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+  margin: 10px;
+  a{
+    text-align: center;
+    text-decoration: none;
+    color: #FF4742;
+    display: flow;
+
+  }
+}
+
+// Smallest device
+@media (min-width: 100px) and (max-width: 575px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
