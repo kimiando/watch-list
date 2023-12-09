@@ -77,3 +77,5 @@ gem "sassc-rails"
 gem "faker"
 gem "dotenv-rails"
 gem "cloudinary"
+gem 'nokogiri'
+gem 'rest-client'

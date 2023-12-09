@@ -7,6 +7,11 @@ body{
   background-position: center;
   padding: 150px 0;
 }
+.banner-show {
+  background-size: cover;
+  background-position: center;
+  padding: 220px;
+}
 
 .banner h1 {
   margin: 0;
@@ -28,6 +33,7 @@ body{
   display: grid;
   h1{
     padding-bottom: 20px;
+    color: #FFFFFF;
   }
 }
 // button
