@@ -29,6 +29,53 @@
   padding: 16px;
 }
 
+
+.bookmark-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 16px;
+}
+
+.card {
+  flex: 0 0 calc(25% - 16px);
+  margin: 8px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 12px white;
+  transition: box-shadow 0.3s ease-in-out;
+  position: relative;
+}
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 16px;
+  }
+
+.card-category {
+  position: relative;
+  flex: 0 0 calc(25% - 16px);
+  margin: 8px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 16px rgba(244, 240, 240, 0.8);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.card-category:hover {
+  box-shadow: 0 0 20px rgba(255, 0, 0, 1);
+}
+
+// .card-text {
+//   h2{
+//     text-align: center;
+//   }
+//   color: rgb(22, 2, 2);
+//   text-align: center;
+// }
+
+
 // .bookmark-container {
 //   column-count: 2;
 //   column-gap: 20px;
@@ -46,13 +93,13 @@
 //   cursor: pointer;
 // }
 // //
-.bookmark-container {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 16px;
-}
+// .bookmark-container {
+//   display: flex;
+//   flex-wrap: wrap;
+//   margin: 16px;
+// }
 
-.card {
-  flex: 0 0 calc(25% - 16px);
-  margin: 8px;
-}
+// .card {
+//   flex: 0 0 calc(25% - 16px);
+//   margin: 8px;
+// }

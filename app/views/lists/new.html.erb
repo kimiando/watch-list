@@ -12,14 +12,14 @@
 </div>
 <%# end of nav %>
 <div class="details">
-  <h1>Create a Movie List</h1>
-  <div class="create-form">
-    <%= simple_form_for @list do |f| %>
+  <%= simple_form_for @list do |f| %>
+    <h1>Create a Movie List</h1>
+    <div class="create-form">
       <%= f.input :name %>
       <%= f.input :photo, as: :file %>
       <div class="button-center">
         <%= f.submit class: 'btn btn-primary' %>
       </div>
-    <% end %>
-  </div>
+    </div>
+  <% end %>
 </div>

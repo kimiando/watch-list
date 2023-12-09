@@ -3,7 +3,6 @@
 <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= cl_image_path @list.photo.key %>) ">
   <div class="title-container">
     <h1><%= @list.name %></h1>
-    <%= link_to "add a comment", new_list_bookmark_path(@list), class: 'add-list-button'%>
   </div>
 </div>
 <%# end of banner %>
@@ -12,9 +11,13 @@
     <div class="card" style="width: 18rem;">
       <%= image_tag bookmark.movie.poster_url, alt: "Movie Poster" %>
       <div class="card-body">
-        <h2><%= bookmark.movie.title %></h2>
+        <h2 class="card-text"><%= bookmark.movie.title %></h2>
         <p class="card-text"><%= bookmark.movie.overview %></p>
         <p><%= bookmark.comment %></p>
+        <div class="delete">
+          <%= link_to "delete!", bookmark_path(bookmark),
+          data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
+        </div>
       </div>
     </div>
   <% end %>

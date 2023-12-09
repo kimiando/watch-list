@@ -1,35 +1,80 @@
-.create-form{
-  justify-content: flex-start;
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
-  align-items: center;
-  border: 1px solid black;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  padding-right: 24px;
-  padding-left: 24px;
-  width: 20%;
-  border-radius: 12px;
-  margin-top: 16px;
-}
-.details{
-  justify-content: flex-end;
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
-  margin-bottom: 20px;
-  margin-top: 3%;
-  h4{
-    text-align: center;
-  }
-}
-.button-center{
-  justify-content: center;
-  display: flex;
-}
+// .create-form{
+//   justify-content: flex-start;
+//   display: flex;
+//   flex-wrap: nowrap;
+//   flex-direction: column;
+//   align-items: center;
+//   border: 1px solid black;
+//   padding-top: 24px;
+//   padding-bottom: 24px;
+//   padding-right: 24px;
+//   padding-left: 24px;
+//   width: 20%;
+//   border-radius: 12px;
+//   margin-top: 16px;
+// }
+// .details{
+//   justify-content: flex-end;
+//   display: flex;
+//   flex-wrap: nowrap;
+//   flex-direction: column;
+//   align-content: center;
+//   align-items: center;
+//   margin-bottom: 20px;
+//   margin-top: 3%;
+//   h4{
+//     text-align: center;
+//   }
+// }
+// .button-center{
+//   justify-content: center;
+//   display: flex;
+// }
 body{
-  background-color: rgba(128, 128, 128, 0.381);
+  background-color: #161A30;
+}
+.details {
+  text-align: center;
+  background-color: #585050;
+  margin: 20px;
+  padding: 60px;
+  width: 40%;
+
+    .create-form {
+      input[type="text"], select {
+        width: 100%;
+        padding: 12px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 1px solid #ccccccdf;
+        border-radius: 6px;
+        outline: none;
+        transition: border-color 0.3s ease-in-out;
+
+      }
+
+      input[type="text"]:focus, select:focus {
+        border-color: #3498db;
+      }
+
+      .button-center {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .btn-primary {
+        background-color: #3498db; /* Blue color for the button background */
+        color: #fff; /* White text color */
+        padding: 12px 20px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+      }
+
+      .btn-primary:hover {
+        background-color: #2980b9; /* Darker blue on hover */
+
+    }
+  }
 }
