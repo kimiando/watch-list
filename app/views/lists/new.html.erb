@@ -12,14 +12,8 @@
 </div>
 <%# end of nav %>
 <div class="details">
-  <%= simple_form_for @list do |f| %>
-    <h1>Create a Movie List</h1>
-    <div class="create-form">
-      <%= f.input :name %>
-      <%= f.input :photo, as: :file %>
-      <div class="button-center">
-        <%= f.submit class: 'btn btn-primary' %>
-      </div>
-    </div>
-  <% end %>
+  <h1>Create a Movie List</h1>
+  <div class="form-container">
+    <%=  render "form", list: @list %>
+  </div>
 </div>
