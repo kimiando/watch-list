@@ -1,6 +1,18 @@
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <%= link_to root_path, class: "navbar-brand" do %>
+        <%= image_tag "movienav.png" %>
+      <% end %>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</div>
+<%# end of navbar %>
 <div class="details">
   <h4> Create a new comment </h4>
-  <%= link_to "back to lists", lists_path, class: 'btn btn-primary' %>
   <div class="create-form">
     <%= simple_form_for [@list, @bookmark] do |f| %>
       <%= f.input :comment %>

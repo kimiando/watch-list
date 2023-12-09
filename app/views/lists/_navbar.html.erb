@@ -1,0 +1,32 @@
+   <% if current_page?(list_path) %>
+  <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <%= link_to root_path, class: "navbar-brand" do %>
+          <%= image_tag "movienav.png" %>
+        <% end %>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto">
+          <%= link_to "Comment", new_list_bookmark_path(@list), class: "nav-link" %>
+        </ul>
+      </div>
+    </div>
+  </div>
+<% else %>
+  <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <%= link_to root_path, class: "navbar-brand" do %>
+          <%= image_tag "movienav.png" %>
+        <% end %>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+<% end %>
