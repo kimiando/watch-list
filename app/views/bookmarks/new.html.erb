@@ -1,12 +1,13 @@
-<div class="nav-container">
-  <nav class="navbar navbar-light bg-light">
-    <a class="navbar-brand" href="#"> Create a new comment </a>
-    <%= link_to "back to Lists", lists_path, class: 'btn btn-primary' %>
-  </nav>
-</div>
-
-<%= simple_form_for [@list, @bookmark] do |f| %>
-        <%= f.input :comment %>
-        <%= f.association :movie %>
+<div class="details">
+  <h4> Create a new comment </h4>
+  <%= link_to "back to lists", lists_path, class: 'btn btn-primary' %>
+  <div class="create-form">
+    <%= simple_form_for [@list, @bookmark] do |f| %>
+      <%= f.input :comment %>
+      <%= f.association :movie %>
+      <div class="button-center">
         <%= f.submit class: 'btn btn-primary' %>
-      <% end %>
+      </div>
+    <% end %>
+  </div>
+</div>

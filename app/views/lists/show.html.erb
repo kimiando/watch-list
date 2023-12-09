@@ -1,9 +1,8 @@
-<div class="nav-container">
-  <nav class="navbar navbar-light bg-light">
-    <a class="navbar-brand" href="#"> <%= @list.name %> </a>
-    <%= link_to "back to Lists", lists_path, class: 'btn btn-primary' %>
-    <%= link_to "add a comment", new_list_bookmark_path(@list), class: 'btn btn-primary'%>
-  </nav>
+<%# updated code %>
+<div class="container">
+  <h3><%= @list.name %> </h3>
+  <%= link_to "back to Lists", lists_path, class: 'btn btn-primary' %>
+  <%= link_to "add a comment", new_list_bookmark_path(@list), class: 'btn btn-primary'%>
 </div>
 <div class="cards">
   <% @list.bookmarks.each do |bookmark|  %>
