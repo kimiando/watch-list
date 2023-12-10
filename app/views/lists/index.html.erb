@@ -8,19 +8,6 @@
   </div>
 </div>
 <%# card %>
-<%# movies %>
-<div class="cards-movie">
-  <% @lists.each do |list| %>
-    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path list.photo.key %>')">
-      <h2 class="card-text"><%= link_to list.name, "lists/#{list.id}" %></h2>
-      <%= link_to "Delete",
-      list_path(list),
-      data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
-      %>
-    </div>
-  <% end %>
-</div>
-<%# movies end %>
 <div class="cards">
   <% @lists.each do |list| %>
     <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path list.photo.key %>')">
@@ -32,3 +19,13 @@
     </div>
   <% end %>
 </div>
+<%# movies %>
+<h2>Top Movies</h2>
+<div class="cards-movie">
+  <% @movies.each do |movie| %>
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= movie.poster_url %>)">
+      <h2 class="card-text">  <%= movie.title %></h2>
+    </div>
+  <% end %>
+</div>
+<%# movies end %>
